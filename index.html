@@ -57,7 +57,8 @@
                         </p>
                     </div>
                     <div class="link-block">
-                        <a class="button-link button-link-primary" href="mailto:info@sleep-therapist.com">Get in touch<span class="mail-link">info@sleep-therapist.com</span></a>
+                        <a class="button-link button-link-primary" href="mailto:info@sleep-therapist.com">Get in touch</a>
+                        <span class="mail-link">info@sleep-therapist.com</span>
                     </div>
                 </div>
             </div>
@@ -224,3 +225,13 @@
 
     function myFunction() {
     if (window.scrollpos > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+    }  
+
+</script>
+
+</body>
+</html>

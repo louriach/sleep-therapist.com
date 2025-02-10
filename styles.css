@@ -46,7 +46,7 @@ body, html {
     /* Padding */
     --padding-card: 24px;
     --padding-card-inner: 16px;
-    --padding-button: 16px 20px;
+    --padding-button: 16px 24px;
 
     /* Widths */
     --container-width: 800px;
@@ -519,11 +519,24 @@ figure {
     gap: var(--space-1);
 }
 
+.link-block {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.mail-link {
+    font-size: var(--size-small);
+    display: block;
+}
+
 .button-link {
     align-self: flex-start;
-    border-radius: var(--radius-card);
+    border-radius: var(--radius-pill);
     display: inline-flex;
+    flex-direction: column;
     padding: var(--padding-button);
+    text-align: center;
     text-decoration: none;
     transition: all ease .25s;
 }
